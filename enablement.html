@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benjamin Phillips &mdash; Enablement Leadership</title>
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <meta name="GPTBot" content="noindex">
+  <meta name="CCBot" content="noindex">
+  <meta name="anthropic-ai" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #fafaf8;
+      --bg-alt:      #f2efe9;
+      --text:        #1c1917;
+      --text-muted:  #78716c;
+      --text-light:  #a8a29e;
+      --accent:      #1e40af;
+      --accent-light:#dbeafe;
+      --border:      #e5e0d8;
+      --white:       #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    @media print {
+      body { background: white; font-size: 11pt; }
+      .no-print { display: none !important; }
+      a { color: inherit; }
+    }
+
+    .resume-header {
+      background: var(--text);
+      color: var(--white);
+      padding: 3.5rem 4rem;
+    }
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: end;
+    }
+    .header-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 0.6rem;
+    }
+    .header-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.4rem;
+    }
+    .header-title {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.6);
+      font-weight: 300;
+    }
+    .header-contact {
+      text-align: right;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.8;
+    }
+    .header-contact a { color: rgba(255,255,255,0.7); text-decoration: none; }
+
+    .positioning {
+      background: var(--accent);
+      color: var(--white);
+      padding: 1.5rem 4rem;
+    }
+    .positioning-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 0.97rem;
+      line-height: 1.65;
+    }
+
+    .resume-body {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 2.2fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .sidebar-section { margin-bottom: 2.5rem; }
+    .sidebar-section:last-child { margin-bottom: 0; }
+    .sidebar-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent-light);
+    }
+    .sidebar ul { list-style: none; }
+    .sidebar ul li {
+      font-size: 0.88rem;
+      color: var(--text);
+      padding: 0.35rem 0;
+      line-height: 1.4;
+    }
+    .stat-block {
+      background: var(--bg-alt);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+      border-left: 3px solid var(--accent);
+    }
+    .stat-block .num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.75rem;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 0.2rem;
+    }
+    .stat-block .desc {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .exp-section { margin-bottom: 2.75rem; }
+    .exp-section:last-child { margin-bottom: 0; }
+    .exp-company {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.15rem;
+    }
+    .exp-role {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.15rem;
+      line-height: 1.2;
+    }
+    .exp-dates {
+      font-size: 0.78rem;
+      color: var(--text-light);
+      margin-bottom: 0.85rem;
+    }
+    .exp-desc {
+      font-size: 0.93rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+      margin-bottom: 0.9rem;
+    }
+    .exp-bullets { list-style: none; margin-bottom: 1rem; }
+    .exp-bullets li {
+      font-size: 0.91rem;
+      color: var(--text);
+      padding: 0.25rem 0 0.25rem 1rem;
+      position: relative;
+      line-height: 1.55;
+    }
+    .exp-bullets li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0.62rem;
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .exp-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    .back-bar {
+      background: var(--bg-alt);
+      padding: 0.75rem 4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .back-bar a {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    .back-bar a:hover { color: var(--text); }
+
+    @media (max-width: 700px) {
+      .resume-header { padding: 2.5rem 1.5rem; }
+      .header-inner { grid-template-columns: 1fr; }
+      .header-contact { text-align: left; }
+      .positioning { padding: 1.25rem 1.5rem; }
+      .resume-body { padding: 2rem 1.5rem; grid-template-columns: 1fr; gap: 2.5rem; }
+      .back-bar { padding: 0.75rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="back-bar no-print">
+    <a href="index.html">&larr; Back to Portfolio</a>
+  </div>
+
+  <div class="resume-header">
+    <div class="header-inner">
+      <div>
+        <div class="header-label">Resume &mdash; Enablement Leadership</div>
+        <div class="header-name">Benjamin Phillips</div>
+        <div class="header-title">Enablement Program Manager &amp; L&amp;D Leader</div>
+      </div>
+      <div class="header-contact">
+        Sandpoint, Idaho<br>
+        <a href="https://www.linkedin.com/in/benjamin-phillips-208/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="positioning">
+    <div class="positioning-inner">
+      I've built enablement from scratch at three organizations, cut ramp time nearly in half, and maintained 94% learner satisfaction across 7 consecutive quarters. I design programs that actually stick &mdash; blending instructional design principles, operational rigor, and a genuine belief that well-equipped people do extraordinary work.
+    </div>
+  </div>
+
+  <div class="resume-body">
+
+    <aside class="sidebar">
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Impact Metrics</div>
+        <div class="stat-block">
+          <div class="num">94%</div>
+          <div class="desc">Learner satisfaction &mdash; 7 consecutive quarters (Postman)</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">97&rarr;52</div>
+          <div class="desc">Days to Revenue Readiness (Postman)</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">50%</div>
+          <div class="desc">Reduction in CSM onboarding time (Kochava)</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">$130M</div>
+          <div class="desc">ARR supported at Postman ($50M &rarr; $130M)</div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Enablement Skills</div>
+        <ul>
+          <li>Instructional design</li>
+          <li>GTM &amp; sales enablement</li>
+          <li>Onboarding program design</li>
+          <li>LMS selection &amp; management</li>
+          <li>Learning path development</li>
+          <li>Live &amp; async facilitation</li>
+          <li>MEDDPICC / Sandler methodology</li>
+          <li>Gong &amp; AI tool adoption</li>
+          <li>SKO planning &amp; facilitation</li>
+          <li>Enablement metrics &amp; reporting</li>
+          <li>Objection handling frameworks</li>
+          <li>Knowledge base management</li>
+          <li>API &amp; technical enablement</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Certifications</div>
+        <ul>
+          <li>API 101</li>
+          <li>Google Ads Search</li>
+          <li>Google Ads Display</li>
+          <li>Google Ads Shopping</li>
+          <li>Apple ACMT</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Education</div>
+        <ul>
+          <li>B.S. Business &amp; Organizational Leadership<br><span style="color: var(--text-muted); font-size:0.82rem;">Corban University</span></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Communities</div>
+        <ul>
+          <li>The Enablement Squad (2025&ndash;Present)</li>
+          <li>Support Driven (2023&ndash;Present)</li>
+          <li>CS Collective (2026&ndash;Present)</li>
+        </ul>
+      </div>
+
+    </aside>
+
+    <main>
+
+      <div class="exp-section">
+        <div class="exp-company">Postman</div>
+        <div class="exp-role">Enablement Program Manager</div>
+        <div class="exp-dates">Jan 2022 &ndash; Nov 2023 &nbsp;&bull;&nbsp; Remote</div>
+        <p class="exp-desc">Designed and delivered onboarding and enablement programs for GTM and customer-facing teams at one of the world's leading API platforms. Combined instructional design principles, operational rigor, and learner experience strategy to equip fast-scaling teams for success.</p>
+        <ul class="exp-bullets">
+          <li>Supported sales-led growth from $50M to $130M ARR through enablement programs that accelerated team performance</li>
+          <li>Reduced average Time to Revenue Readiness from 97 to 52 days &mdash; a 46% improvement</li>
+          <li>Virtually onboarded 21+ GTM team members per quarter with 94% learner satisfaction for 7 consecutive quarters</li>
+          <li>Initiated adoption of AI sales tools (Gong) and MEDDPICC methodology across all new GTM hires</li>
+          <li>Developed scalable learning paths and training materials for all new GTM roles across the organization</li>
+          <li>Created and delivered Objection Handling framework and ongoing enablement resources</li>
+          <li>Taught API ecosystem fundamentals and the Software Development Lifecycle to non-technical audiences</li>
+          <li>Planned, organized, and facilitated all engagement initiatives for the 2023 in-person SKO</li>
+          <li>Managed enablement operations and LMS processes across distributed, remote-first teams</li>
+        </ul>
+      </div>
+
+      <hr class="exp-divider">
+
+      <div class="exp-section">
+        <div class="exp-company">Kochava</div>
+        <div class="exp-role">Head of Learning &amp; Development</div>
+        <div class="exp-dates">2019 &ndash; 2020 &nbsp;&bull;&nbsp; Sandpoint, ID</div>
+        <p class="exp-desc">Built and led Kochava's first-ever enablement function from scratch, empowering CSMs, GTM teams, technical teams, and global stakeholders through scalable learning and development programs.</p>
+        <ul class="exp-bullets">
+          <li>Designed learning paths and enablement resources across product, sales, and customer success functions</li>
+          <li>Reduced CSM onboarding time by 50% through a new training and certification system</li>
+          <li>Negotiated and implemented Kochava's first LMS and knowledge base platform</li>
+          <li>Supported the rollout of the Sandler sales methodology across GTM teams</li>
+          <li>Delivered ongoing enablement for product launches, process updates, and skill development</li>
+          <li>Reported enablement impact metrics directly to executive leadership</li>
+          <li>Supported operations for a global in-person CS summit</li>
+        </ul>
+      </div>
+
+      <hr class="exp-divider">
+
+      <div class="exp-section">
+        <div class="exp-company">Apple</div>
+        <div class="exp-role">Corporate Trainer (ISGT) &amp; Training Lead</div>
+        <div class="exp-dates">2013 &ndash; 2017 &nbsp;&bull;&nbsp; Portland, OR</div>
+        <p class="exp-desc">Served as a 2x ISGT (In-Store Guest Trainer / Corporate Trainer) and led Training and Onboarding for one of the region's highest-performing Apple Store locations. Created and facilitated competency-based enablement programs for 100+ team members.</p>
+        <ul class="exp-bullets">
+          <li>Created competency-based enablement programs for 100+ team members across technical, sales, and support roles</li>
+          <li>Facilitated onboarding experiences for new hires that accelerated time-to-productivity</li>
+          <li>Mentored team members who advanced into leadership and senior technical roles</li>
+          <li>Held multiple roles: Lead Genius, Floor Leadership (3x L&amp;L), Expert, ISGT x2, Technical Specialist</li>
+        </ul>
+      </div>
+
+      <hr class="exp-divider">
+
+      <div class="exp-section">
+        <div class="exp-company">School of Traditional Skills</div>
+        <div class="exp-role">Director of Customer Experience (Enablement)</div>
+        <div class="exp-dates">2023 &ndash; 2025</div>
+        <p class="exp-desc">Led member enablement alongside CX leadership, ensuring that customers could quickly and thoroughly adopt the platform's learning resources. Created all enablement and onboarding materials for the CX team.</p>
+        <ul class="exp-bullets">
+          <li>Created experiences that enabled members to rapidly adopt and engage with eLearning resources</li>
+          <li>Designed and launched member onboarding programs that directly improved retention and satisfaction</li>
+          <li>Built all CX team enablement and onboarding materials from scratch</li>
+        </ul>
+      </div>
+
+      <hr class="exp-divider">
+
+      <div class="exp-section">
+        <div class="exp-company">Trailhead Foundation</div>
+        <div class="exp-role">Owner / Consultant</div>
+        <div class="exp-dates">2021 &ndash; Present</div>
+        <p class="exp-desc">Partner with small businesses and nonprofits on leadership development and enablement initiatives, including creating leadership content, digital marketing training, and team communication programs.</p>
+        <ul class="exp-bullets">
+          <li>Created leadership development content and digital marketing campaigns for client organizations</li>
+          <li>Supported enablement initiatives to improve team communication and capacity</li>
+          <li>Conducted digital marketing audits that informed growth strategies</li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>

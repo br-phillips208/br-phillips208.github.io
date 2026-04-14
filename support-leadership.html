@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benjamin Phillips &mdash; Support &amp; CX Leadership</title>
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <meta name="GPTBot" content="noindex">
+  <meta name="CCBot" content="noindex">
+  <meta name="anthropic-ai" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #fafaf8;
+      --bg-alt:      #f2efe9;
+      --text:        #1c1917;
+      --text-muted:  #78716c;
+      --text-light:  #a8a29e;
+      --accent:      #7c3aed;
+      --accent-light:#ede9fe;
+      --border:      #e5e0d8;
+      --white:       #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    @media print {
+      body { background: white; font-size: 11pt; }
+      .no-print { display: none !important; }
+      a { color: inherit; }
+    }
+
+    .resume-header {
+      background: var(--text);
+      color: var(--white);
+      padding: 3.5rem 4rem;
+    }
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: end;
+    }
+    .header-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 0.6rem;
+    }
+    .header-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.4rem;
+    }
+    .header-title {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.6);
+      font-weight: 300;
+    }
+    .header-contact {
+      text-align: right;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.8;
+    }
+    .header-contact a { color: rgba(255,255,255,0.7); text-decoration: none; }
+
+    .positioning {
+      background: var(--accent);
+      color: var(--white);
+      padding: 1.5rem 4rem;
+    }
+    .positioning-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 0.97rem;
+      line-height: 1.65;
+    }
+
+    .resume-body {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 2.2fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .sidebar-section { margin-bottom: 2.5rem; }
+    .sidebar-section:last-child { margin-bottom: 0; }
+    .sidebar-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent-light);
+    }
+    .sidebar ul { list-style: none; }
+    .sidebar ul li {
+      font-size: 0.88rem;
+      color: var(--text);
+      padding: 0.35rem 0;
+      line-height: 1.4;
+    }
+    .stat-block {
+      background: var(--bg-alt);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+      border-left: 3px solid var(--accent);
+    }
+    .stat-block .num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.75rem;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 0.2rem;
+    }
+    .stat-block .desc {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .exp-section { margin-bottom: 2.75rem; }
+    .exp-section:last-child { margin-bottom: 0; }
+    .exp-company {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.15rem;
+    }
+    .exp-role {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.15rem;
+      line-height: 1.2;
+    }
+    .exp-dates {
+      font-size: 0.78rem;
+      color: var(--text-light);
+      margin-bottom: 0.85rem;
+    }
+    .exp-desc {
+      font-size: 0.93rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+      margin-bottom: 0.9rem;
+    }
+    .exp-bullets { list-style: none; margin-bottom: 1rem; }
+    .exp-bullets li {
+      font-size: 0.91rem;
+      color: var(--text);
+      padding: 0.25rem 0 0.25rem 1rem;
+      position: relative;
+      line-height: 1.55;
+    }
+    .exp-bullets li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0.62rem;
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .exp-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    .back-bar {
+      background: var(--bg-alt);
+      padding: 0.75rem 4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .back-bar a {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    .back-bar a:hover { color: var(--text); }
+
+    @media (max-width: 700px) {
+      .resume-header { padding: 2.5rem 1.5rem; }
+      .header-inner { grid-template-columns: 1fr; }
+      .header-contact { text-align: left; }
+      .positioning { padding: 1.25rem 1.5rem; }
+      .resume-body { padding: 2rem 1.5rem; grid-template-columns: 1fr; gap: 2.5rem; }
+      .back-bar { padding: 0.75rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="back-bar no-print">
+    <a href="index.html">&larr; Back to Portfolio</a>
+  </div>
+
+  <div class="resume-header">
+    <div class="header-inner">
+      <div>
+        <div class="header-label">Resume &mdash; Support &amp; CX Leadership</div>
+        <div class="header-name">Benjamin Phillips</div>
+        <div class="header-title">Director-Level CX Leader &amp; Support Organization Builder</div>
+      </div>
+      <div class="header-contact">
+        Sandpoint, Idaho<br>
+        <a href="https://www.linkedin.com/in/benjamin-phillips-208/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="positioning">
+    <div class="positioning-inner">
+      I've led support and CX organizations to results most teams only aspire to: greater than 95% CSAT, a 79 NPS, and less than 5% churn. I build teams that customers trust, create systems that scale, and foster cultures where people want to do their best work &mdash; because they actually feel equipped to do it.
+    </div>
+  </div>
+
+  <div class="resume-body">
+
+    <aside class="sidebar">
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Key Results</div>
+        <div class="stat-block">
+          <div class="num">&gt;95%</div>
+          <div class="desc">CSAT &mdash; School of Traditional Skills</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">79</div>
+          <div class="desc">NPS &mdash; School of Traditional Skills</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">&lt;5%</div>
+          <div class="desc">Churn rate &mdash; School of Traditional Skills</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">5</div>
+          <div class="desc">Fortune 500 accounts managed at Kochava</div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">CX &amp; Support Skills</div>
+        <ul>
+          <li>Team leadership &amp; coaching</li>
+          <li>CSAT &amp; NPS management</li>
+          <li>Retention &amp; churn reduction</li>
+          <li>Technical escalation handling</li>
+          <li>Support operations &amp; tooling</li>
+          <li>Member/customer onboarding</li>
+          <li>Voice of the customer</li>
+          <li>Vendor &amp; CS partnerships</li>
+          <li>Executive stakeholder reporting</li>
+          <li>Service recovery programs</li>
+          <li>Cross-functional collaboration</li>
+          <li>SQL &amp; API troubleshooting</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Education</div>
+        <ul>
+          <li>B.S. Business &amp; Organizational Leadership<br><span style="color: var(--text-muted); font-size:0.82rem;">Corban University</span></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Certifications</div>
+        <ul>
+          <li>Apple ACMT</li>
+          <li>API 101</li>
+          <li>Google Ads Search</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Communities</div>
+        <ul>
+          <li>Support Driven (2023&ndash;Present)</li>
+          <li>CS Collective (2026&ndash;Present)</li>
+          <li>The Enablement Squad (2025&ndash;Present)</li>
+        </ul>
+      </div>
+
+    </aside>
+
+    <main>
+
+      <div class="exp-section">
+        <div class="exp-company">School of Traditional Skills</div>
+        <div class="exp-role">Director of Customer Experience</div>
+        <div class="exp-dates">2023 &ndash; 2025</div>
+        <p class="exp-desc">Led and scaled the Customer Support and Member Success organization for a rapidly growing eLearning membership community. Served as the executive voice of the customer, influencing company strategy, operations, and brand experience. Led the company's largest team of individual contributors and people managers.</p>
+        <ul class="exp-bullets">
+          <li>Drove customer satisfaction results of greater than 95% CSAT and a 79 NPS consistently</li>
+          <li>Maintained customer retention with less than 5% churn across a fast-growing membership base</li>
+          <li>Led the company's largest team of ICs and people managers, fostering a culture of growth, coaching, and collaboration</li>
+          <li>Designed and launched member onboarding programs that accelerated engagement and reduced time-to-value</li>
+          <li>Served as the executive voice of the customer, influencing product, operations, and brand decisions</li>
+          <li>Project-managed flagship annual events and negotiated CS vendor partnerships</li>
+          <li>Oversaw all technical escalations and service recovery initiatives</li>
+          <li>Created all enablement and onboarding materials for the CX team</li>
+        </ul>
+      </div>
+
+      <hr class="exp-divider">
+
+      <div class="exp-section">
+        <div class="exp-company">Kochava</div>
+        <div class="exp-role">Customer Success Manager</div>
+        <div class="exp-dates">2017 &ndash; 2019 &nbsp;&bull;&nbsp; Sandpoint, ID</div>
+        <p class="exp-desc">Supported enterprise customers through technical onboarding, adoption, and optimization of Kochava's attribution and analytics platform. Served as the primary advocate for clients, ensuring successful implementations, issue resolution, and measurable business outcomes.</p>
+        <ul class="exp-bullets">
+          <li>Managed strategic enterprise accounts, including five Fortune 500 companies</li>
+          <li>Drove customer value realization and product adoption in highly technical SaaS environments</li>
+          <li>Initiated complex troubleshooting using SQL, JSON editors, and API testing clients</li>
+          <li>Collaborated closely with Engineering to resolve technical escalations and improve the overall customer experience</li>
+        </ul>
+      </div>
+
+      <hr class="exp-divider">
+
+      <div class="exp-section">
+        <div class="exp-company">Apple</div>
+        <div class="exp-role">Technical Support Lead</div>
+        <div class="exp-dates">2013 &ndash; 2017 &nbsp;&bull;&nbsp; Portland, OR</div>
+        <p class="exp-desc">Led customer-facing and technical support teams within a high-volume retail environment at one of the region's top-performing Apple Store locations. Championed a culture of excellence in customer experience and employee development across multiple leadership roles.</p>
+        <ul class="exp-bullets">
+          <li>Delivered floor leadership for one of the region's highest-performing retail locations</li>
+          <li>Built a reputation for handling escalated customer situations with empathy, confidence, and consistent positive outcomes</li>
+          <li>Consistently exceeded NPS and sales performance targets</li>
+          <li>Mentored team members who advanced into leadership and technical specialist roles</li>
+          <li>Titles held: Lead Genius, Floor Leadership (3x L&amp;L), Sales Lead, ISGT x2 (Corporate Trainer), Mac &amp; Mobile Technician</li>
+        </ul>
+      </div>
+
+      <hr class="exp-divider">
+
+      <div class="exp-section">
+        <div class="exp-company">Postman</div>
+        <div class="exp-role">Enablement Program Manager &amp; ERG Founder</div>
+        <div class="exp-dates">Jan 2022 &ndash; Nov 2023 &nbsp;&bull;&nbsp; Remote</div>
+        <p class="exp-desc">While primarily in an enablement role, also built and led internal community infrastructure at Postman &mdash; founding and operating a company-wide Employee Resource Group that created belonging within a remote-first environment.</p>
+        <ul class="exp-bullets">
+          <li>Founded and led Postman's family-focused ERG, building community across a distributed team</li>
+          <li>Designed monthly virtual events and a stakeholder-aligned charter from scratch</li>
+          <li>Supported a culture of belonging and connection in a fully remote work environment</li>
+        </ul>
+      </div>
+
+      <hr class="exp-divider">
+
+      <div class="exp-section">
+        <div class="exp-company">Starbucks</div>
+        <div class="exp-role">Assistant Store Manager</div>
+        <div class="exp-dates">2005 &ndash; 2010 &nbsp;&bull;&nbsp; Portland, OR</div>
+        <p class="exp-desc">Rose from Barista to Assistant Store Manager over five years. Led daily operations, team development, and business performance for a high-volume location, with consistent results in guest satisfaction and employee engagement.</p>
+        <ul class="exp-bullets">
+          <li>Directed and coached a team of 15+ employees in a fast-paced, high-volume service environment</li>
+          <li>Applied Lean and Quality-Driven Operations principles to improve consistency and efficiency</li>
+          <li>Delivered strong and consistent results in customer satisfaction and employee engagement</li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
