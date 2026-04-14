@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benjamin Phillips &mdash; Hospitality &amp; Restaurant Leadership</title>
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <meta name="GPTBot" content="noindex">
+  <meta name="CCBot" content="noindex">
+  <meta name="anthropic-ai" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #fafaf8;
+      --bg-alt:      #f2efe9;
+      --text:        #1c1917;
+      --text-muted:  #78716c;
+      --text-light:  #a8a29e;
+      --accent:      #92400e;
+      --accent-light:#fef3c7;
+      --border:      #e5e0d8;
+      --white:       #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* PRINT */
+    @media print {
+      body { background: white; font-size: 11pt; }
+      .no-print { display: none !important; }
+      .page { max-width: 100%; padding: 0; }
+      a { color: inherit; }
+    }
+
+    /* HEADER */
+    .resume-header {
+      background: var(--text);
+      color: var(--white);
+      padding: 3.5rem 4rem;
+    }
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: end;
+    }
+    .header-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 0.6rem;
+    }
+    .header-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.4rem;
+    }
+    .header-title {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.6);
+      font-weight: 300;
+    }
+    .header-contact {
+      text-align: right;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.8;
+    }
+    .header-contact a { color: rgba(255,255,255,0.7); text-decoration: none; }
+
+    /* POSITIONING BANNER */
+    .positioning {
+      background: var(--accent);
+      color: var(--white);
+      padding: 1.5rem 4rem;
+    }
+    .positioning-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 0.97rem;
+      line-height: 1.65;
+      font-weight: 400;
+    }
+
+    /* BODY */
+    .resume-body {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 2.2fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    /* SIDEBAR */
+    .sidebar {}
+    .sidebar-section { margin-bottom: 2.5rem; }
+    .sidebar-section:last-child { margin-bottom: 0; }
+    .sidebar-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent-light);
+    }
+    .sidebar ul { list-style: none; }
+    .sidebar ul li {
+      font-size: 0.88rem;
+      color: var(--text);
+      padding: 0.35rem 0;
+      line-height: 1.4;
+    }
+    .stat-block {
+      background: var(--bg-alt);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+      border-left: 3px solid var(--accent);
+    }
+    .stat-block .num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.75rem;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 0.2rem;
+    }
+    .stat-block .desc {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* MAIN CONTENT */
+    .main-content {}
+    .exp-section { margin-bottom: 2.75rem; }
+    .exp-section:last-child { margin-bottom: 0; }
+    .exp-company {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.15rem;
+    }
+    .exp-role {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.15rem;
+      line-height: 1.2;
+    }
+    .exp-dates {
+      font-size: 0.78rem;
+      color: var(--text-light);
+      margin-bottom: 0.85rem;
+    }
+    .exp-desc {
+      font-size: 0.93rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+      margin-bottom: 0.9rem;
+    }
+    .exp-bullets { list-style: none; margin-bottom: 1rem; }
+    .exp-bullets li {
+      font-size: 0.91rem;
+      color: var(--text);
+      padding: 0.25rem 0 0.25rem 1rem;
+      position: relative;
+      line-height: 1.55;
+    }
+    .exp-bullets li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0.62rem;
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .exp-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    /* BACK LINK */
+    .back-bar {
+      background: var(--bg-alt);
+      padding: 0.75rem 4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .back-bar a {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+    }
+    .back-bar a:hover { color: var(--text); }
+
+    @media (max-width: 700px) {
+      .resume-header { padding: 2.5rem 1.5rem; }
+      .header-inner { grid-template-columns: 1fr; }
+      .header-contact { text-align: left; }
+      .positioning { padding: 1.25rem 1.5rem; }
+      .resume-body { padding: 2rem 1.5rem; grid-template-columns: 1fr; gap: 2.5rem; }
+      .back-bar { padding: 0.75rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="back-bar no-print">
+    <a href="index.html">&larr; Back to Portfolio</a>
+  </div>
+
+  <!-- HEADER -->
+  <div class="resume-header">
+    <div class="header-inner">
+      <div>
+        <div class="header-label">Resume &mdash; Hospitality &amp; Restaurant Leadership</div>
+        <div class="header-name">Benjamin Phillips</div>
+        <div class="header-title">15+ Years in Customer-Facing Leadership &amp; Operations</div>
+      </div>
+      <div class="header-contact">
+        Sandpoint, Idaho<br>
+        <a href="https://www.linkedin.com/in/benjamin-phillips-208/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- POSITIONING -->
+  <div class="positioning">
+    <div class="positioning-inner">
+      Fifteen-plus years building teams, running operations, and creating experiences that bring people back. From barista to co-founder to assistant manager, I know every role in a hospitality environment &mdash; and I know how to lead the people in them with empathy, accountability, and a focus on quality.
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="resume-body">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Key Numbers</div>
+        <div class="stat-block">
+          <div class="num">15+</div>
+          <div class="desc">Years in customer-facing leadership</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">10</div>
+          <div class="desc">Years co-founding &amp; running a coffee business</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">15+</div>
+          <div class="desc">Direct reports managed at Starbucks</div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Hospitality Skills</div>
+        <ul>
+          <li>Team leadership &amp; coaching</li>
+          <li>Store operations &amp; P&amp;L</li>
+          <li>Labor scheduling &amp; deployment</li>
+          <li>Inventory &amp; ordering</li>
+          <li>Lean / QDO operations</li>
+          <li>Service recovery &amp; escalations</li>
+          <li>Training &amp; onboarding</li>
+          <li>Vendor relationships</li>
+          <li>Coffee roasting &amp; QC</li>
+          <li>Customer experience design</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Education</div>
+        <ul>
+          <li>B.S. Business &amp; Organizational Leadership<br><span style="color: var(--text-muted); font-size:0.82rem;">Corban University</span></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Contact</div>
+        <ul>
+          <li>Sandpoint, Idaho</li>
+          <li><a href="https://www.linkedin.com/in/benjamin-phillips-208/" target="_blank" style="color: var(--accent); text-decoration:none;">LinkedIn Profile</a></li>
+        </ul>
+      </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+      <div class="exp-section">
+        <div class="exp-company">Starbucks</div>
+        <div class="exp-role">Assistant Store Manager</div>
+        <div class="exp-dates">2008 &ndash; 2010 &nbsp;&bull;&nbsp; Portland, OR</div>
+        <p class="exp-desc">Led daily operations, team development, and business performance for a high-volume Portland location. Applied Lean and Quality-Driven Operations principles to improve consistency, service quality, and operational efficiency.</p>
+        <ul class="exp-bullets">
+          <li>Directed and coached a team of 15+ employees, fostering a culture of accountability, collaboration, and exceptional guest service</li>
+          <li>Optimized labor deployment and workflow to align with customer traffic patterns and business goals</li>
+          <li>Oversaw inventory management, ordering, and cost control to maintain operational efficiency</li>
+          <li>Applied Lean and QDO principles to improve productivity and consistency across all shifts</li>
+          <li>Delivered strong results in customer satisfaction, employee engagement, and operational KPIs</li>
+        </ul>
+        <div style="font-size:0.82rem; color: var(--text-muted); margin-top: 0.5rem;"><em>Previously: Shift Lead (2006&ndash;2008), Barista (2005&ndash;2006)</em></div>
+      </div>
+
+      <hr class="exp-divider">
+
+      <div class="exp-section">
+        <div class="exp-company">Seven Seeds Coffee Roasters</div>
+        <div class="exp-role">Co-Founder &amp; Roaster</div>
+        <div class="exp-dates">2010 &ndash; 2020 &nbsp;&bull;&nbsp; Idaho &nbsp;&bull;&nbsp; 10 Years</div>
+        <p class="exp-desc">Co-founded and operated a small-batch coffee roasting business from the ground up. Oversaw every aspect of the venture &mdash; from product development and quality control to marketing, customer relationships, and fulfillment logistics.</p>
+        <ul class="exp-bullets">
+          <li>Developed and refined roasting profiles to consistently produce high-quality, repeatable product</li>
+          <li>Launched the business online with digital marketing strategies that drove immediate local and regional traction</li>
+          <li>Managed customer relationships, vendor partnerships, and fulfillment operations end-to-end</li>
+          <li>Built a loyal repeat customer base through quality, consistency, and community engagement</li>
+        </ul>
+      </div>
+
+      <hr class="exp-divider">
+
+      <div class="exp-section">
+        <div class="exp-company">Apple</div>
+        <div class="exp-role">Technical Support Lead &amp; Trainer</div>
+        <div class="exp-dates">2013 &ndash; 2017 &nbsp;&bull;&nbsp; Portland, OR</div>
+        <p class="exp-desc">Led customer-facing teams at one of the region's highest-performing Apple Store locations in a fast-paced, high-volume retail environment. Known for handling escalated customers with empathy, confidence, and consistently turning difficult interactions into positive outcomes.</p>
+        <ul class="exp-bullets">
+          <li>Delivered floor leadership and team coaching in one of the region's busiest retail locations</li>
+          <li>Built a reputation for empathetic escalation handling &mdash; turning frustrated customers into loyal advocates</li>
+          <li>Consistently exceeded NPS and sales performance targets quarter over quarter</li>
+          <li>Mentored team members who went on to advance into leadership and technical roles</li>
+        </ul>
+      </div>
+
+      <hr class="exp-divider">
+
+      <div class="exp-section">
+        <div class="exp-company">FedEx Office</div>
+        <div class="exp-role">Lead Project Manager</div>
+        <div class="exp-dates">2012 &ndash; 2013 &nbsp;&bull;&nbsp; Portland, OR</div>
+        <p class="exp-desc">Led project management for large-scale print and production services, coordinating internal teams and external vendors to deliver complex customer projects on time and above expectations.</p>
+        <ul class="exp-bullets">
+          <li>Oversaw the full project lifecycle for high-volume print, signage, and marketing collateral</li>
+          <li>Applied Quality Driven Management (QDM) principles to ensure consistency across all engagements</li>
+          <li>Consistently exceeded customer satisfaction goals through proactive communication and problem-solving</li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
